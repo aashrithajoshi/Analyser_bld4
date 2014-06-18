@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="Analyser_bld3.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Analyser_bld3"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar d:IsLocked="False">
+            <AppBarButton Icon="ShowResults" Label="recent"/>
+            <AppBarButton Icon="Cancel" Label="clear all"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid Background="#FF363636" d:IsLocked="False">
+        <TextBlock x:Name="Analyser" Margin="9.988,8.924,-5.798,0" TextWrapping="Wrap" Height="100.095" Width="379.81" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" HorizontalAlignment="Center" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="90">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="-0.109"/>
+            </TextBlock.RenderTransform>
+    		<Run Text="Analyse"/>
+    		<Run Text="r"/>
+        </TextBlock>
+        <TextBlock x:Name="Enter_Values" HorizontalAlignment="Left" Height="34" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" FontSize="26.667" Text="Enter values here:"/>
+        <TextBlock x:Name="PH" HorizontalAlignment="Left" TextWrapping="Wrap" Text="pH:" VerticalAlignment="Top" Height="43" Width="143" FontSize="26.667" Margin="40,173,0,0" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform TranslateX="3"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="paco2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="PaCO2:" VerticalAlignment="Top" Height="43" Width="143" FontSize="26.667" Margin="40,221,0,0"/>
+        <TextBlock x:Name="hco3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="HCO3:" VerticalAlignment="Top" Height="43" Width="143" FontSize="26.667" Margin="40,269,0,0"/>
+        <TextBlock x:Name="na" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Na:" VerticalAlignment="Top" Height="43" Width="143" FontSize="26.667" Margin="40,317,0,0"/>
+        <TextBlock x:Name="cl" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Cl:" VerticalAlignment="Top" Height="43" Width="143" FontSize="26.667" Margin="40,365,0,0"/>
+        <TextBlock x:Name="albumin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Albumin:" VerticalAlignment="Top" Height="43" Width="143" FontSize="26.667" Margin="40,413,0,0" TextAlignment="Justify" Foreground="White"/>
+        <Button x:Name="submit" Content="Submit" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="141,0,134,22"/>
+        <TextBox x:Name="valuepH" HorizontalAlignment="Left" Margin="219,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="43" InputScope="Number"/>
+        <TextBox x:Name="valuePaCO3" HorizontalAlignment="Left" Margin="219,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="43" InputScope="Number"/>
+        <TextBox x:Name="valueHCO3" HorizontalAlignment="Left" Margin="219,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="43" InputScope="Number"/>
+        <TextBox x:Name="valueNa" HorizontalAlignment="Left" Margin="219,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="43" InputScope="Number"/>
+        <TextBox x:Name="valueCl" HorizontalAlignment="Left" Margin="219,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="43" InputScope="Number"/>
+        <TextBox x:Name="valueAlbumin" HorizontalAlignment="Left" Margin="219,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Height="43" InputScope="Number"/>
+
+    </Grid>
+</Page>
